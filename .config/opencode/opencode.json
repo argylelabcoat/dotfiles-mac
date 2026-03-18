@@ -12,6 +12,7 @@
 	   "tools": true
         }
       }
+   },
    "local":{
      "npm": "@ai-sdk/openai-compatible",
      "options": {
@@ -29,5 +30,6 @@
       }
      }
    }
- }
+  }
 }
+
