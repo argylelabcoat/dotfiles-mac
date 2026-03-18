@@ -11,3 +11,11 @@
 [core]
 	editor = nvim
 	autocrlf = input
+[merge]
+	tool = bc
+[diff]
+	tool = bc
+[mergetool "bc"]
+	trustExitCode = true
+[mergetool]
+	prompt = false

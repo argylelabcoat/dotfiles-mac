@@ -11,7 +11,7 @@ alias ll='lsd -l'
 
 # convenience for homebrew
 alias brew-dump='brew bundle dump --force'
-
+alias weather='curl wttr.in'
 # history search
 bindkey "^[[A" history-beginning-search-backward
 bindkey "^[[B" history-beginning-search-forward
