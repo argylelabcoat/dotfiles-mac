@@ -1,0 +1,17 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://10.10.5.51:11434/v1"
+      },
+      "models": {
+        "mistral-nemo": {
+	   "tools": true
+        }
+      }
+    }
+  }
+}
