@@ -1,35 +1,100 @@
 {
-  "$schema": "https://opencode.ai/config.json",
-  "provider": {
-    "ollama": {
-      "npm": "@ai-sdk/openai-compatible",
-      "name": "Ollama (local)",
-      "options": {
-        "baseURL": "http://10.10.5.51:11434/v1"
-      },
-      "models": {
-        "mistral-nemo": {
-	   "tools": true
-        }
-      }
-   },
-   "local":{
-     "npm": "@ai-sdk/openai-compatible",
-     "options": {
-       "baseURL": "http://localhost:1234/v1"
-      },
-     "models": {
-       "qwen3-coder-30b": {
-         "id": "qwen/qwen3-coder-30b",
-         "reasoning": true,
-         "tool_call": true
-       },
-      "devstral-small-2507": {
-        "id": "mistralai/devstral-small-2507",
-        "tool_call": true
-      }
-     }
-   }
-  }
+	"$schema": "https://opencode.ai/config.json",
+	"provider": {
+		"ollama": {
+			"npm": "@ai-sdk/openai-compatible",
+			"name": "Ollama (local)",
+			"options": {
+				"baseURL": "http://10.10.5.51:11434/v1"
+			},
+			"models": {
+				"mistral-nemo": {
+					"tools": true
+				}
+			}
+		},
+		"m4mini": {
+			"npm": "@ai-sdk/openai-compatible",
+			"name": "m4mini",
+			"options": {
+				"baseURL": "http://10.10.5.11:1234/v1"
+			},
+			"models": {
+				"bytedance/seed-oss-36b": {
+					"name": "bytedance/seed-oss-36b",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"essentialai/rnj-1": {
+					"name": "essentialai/rnj-1",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"ibm/granite-4-h-tiny": {
+					"name": "ibm/granite-4-h-tiny",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"mistralai/devstral-small-2-2512": {
+					"name": "mistralai/devstral-small-2-2512",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"mistralai/devstral-small-2507": {
+					"name": "mistralai/devstral-small-2507",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"nousresearch/hermes-4-70b": {
+					"name": "nousresearch/hermes-4-70b",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"nvidia/nemotron-3-nano": {
+					"name": "nvidia/nemotron-3-nano",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"nvidia/nemotron-3-nano-4b": {
+					"name": "nvidia/nemotron-3-nano-4b",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"qwen/qwen3-coder-30b": {
+					"name": "qwen/qwen3-coder-30b",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				},
+				"zai-org/glm-4.7-flash": {
+					"name": "zai-org/glm-4.7-flash",
+					"limit": {
+						"context": 192000,
+						"output": 65536
+					}
+				}
+			}
+		}
+	},
+	"plugin": [
+		"superpowers@git+https://github.com/obra/superpowers.git",
+		"the-elements-of-style@git+https://github.com/obra/the-elements-of-style.git"
+	]
 }
-

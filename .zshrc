@@ -32,3 +32,5 @@ export PATH="$PATH:/$HOME/.lmstudio/bin"
   
 eval "$(direnv hook zsh)"
 eval "$(starship init zsh)"
+
+CONDASETUP=~/.conda_setup && test -f $CONDASETUP && source $CONDASETUP
