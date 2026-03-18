@@ -1,1 +1,9 @@
 shell-integration-features = ssh-terminfo
+
+# some favorite fonts:
+#TerminessTTF Nerd Font Mono
+#CaskaydiaCove Nerd Font Mono
+
+# setup font:
+font-family = CaskaydiaCove Nerd Font Mono
+font-size = 14
