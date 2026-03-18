@@ -12,6 +12,22 @@
 	   "tools": true
         }
       }
-    }
-  }
+   "local":{
+     "npm": "@ai-sdk/openai-compatible",
+     "options": {
+       "baseURL": "http://localhost:1234/v1"
+      },
+     "models": {
+       "qwen3-coder-30b": {
+         "id": "qwen/qwen3-coder-30b",
+         "reasoning": true,
+         "tool_call": true
+       },
+      "devstral-small-2507": {
+        "id": "mistralai/devstral-small-2507",
+        "tool_call": true
+      }
+     }
+   }
+ }
 }
