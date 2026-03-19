@@ -44,22 +44,8 @@
             "output": 65536
           }
         },
-        "liquid/lfm2-24b-a2b": {
-          "name": "liquid/lfm2-24b-a2b",
-          "limit": {
-            "context": 192000,
-            "output": 65536
-          }
-        },
-        "mistralai/devstral-small-2-2512": {
-          "name": "mistralai/devstral-small-2-2512",
-          "limit": {
-            "context": 192000,
-            "output": 65536
-          }
-        },
-        "mistralai/devstral-small-2507": {
-          "name": "mistralai/devstral-small-2507",
+        "llama-3.2-1b-instruct": {
+          "name": "llama-3.2-1b-instruct",
           "limit": {
             "context": 192000,
             "output": 65536
@@ -67,13 +53,6 @@
         },
         "nousresearch/hermes-4-70b": {
           "name": "nousresearch/hermes-4-70b",
-          "limit": {
-            "context": 192000,
-            "output": 65536
-          }
-        },
-        "nvidia/nemotron-3-nano": {
-          "name": "nvidia/nemotron-3-nano",
           "limit": {
             "context": 192000,
             "output": 65536
